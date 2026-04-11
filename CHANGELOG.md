@@ -2,6 +2,51 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-11)
+
+<section class="features">
+
+### Features
+
+-   [`b05fe40`](https://github.com/stdlib-js/stdlib/commit/b05fe40f8bc3caa85cb8734f9e30a487ae2bed74) - add C implementation for `blas/ext/base/ndarray/zsum` [(#10699)](https://github.com/stdlib-js/stdlib/pull/10699)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`b05fe40`](https://github.com/stdlib-js/stdlib/commit/b05fe40f8bc3caa85cb8734f9e30a487ae2bed74) - **feat:** add C implementation for `blas/ext/base/ndarray/zsum` [(#10699)](https://github.com/stdlib-js/stdlib/pull/10699) _(by Kaustubh Patange, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Kaustubh Patange
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)

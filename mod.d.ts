@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,18 +16,12 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var numelDimension = require( '@stdlib/ndarray-base-numel-dimension' );
-var getStride = require( '@stdlib/ndarray-base-stride' );
-var getOffset = require( '@stdlib/ndarray-base-offset' );
-var getData = require( '@stdlib/ndarray-base-data-buffer' );
-var strided = require( '@stdlib/blas-ext-base-zsum' ).ndarray;
-
-
-// MAIN //
+import { complex128ndarray } from '@stdlib/types/ndarray';
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
 * Computes the sum of all elements in a one-dimensional double-precision complex floating-point ndarray.
@@ -38,8 +32,8 @@ var strided = require( '@stdlib/blas-ext-base-zsum' ).ndarray;
 *
 *     -   a one-dimensional input ndarray.
 *
-* @param {ArrayLikeObject<Object>} arrays - array-like object containing ndarrays
-* @returns {Complex128} sum
+* @param arrays - array-like object containing ndarrays
+* @returns sum
 *
 * @example
 * var Complex128Vector = require( '@stdlib/ndarray-vector-complex128' );
@@ -49,12 +43,9 @@ var strided = require( '@stdlib/blas-ext-base-zsum' ).ndarray;
 * var v = zsum( [ x ] );
 * // returns <Complex128>[ 5.0, 5.0 ]
 */
-function zsum( arrays ) {
-	var x = arrays[ 0 ];
-	return strided( numelDimension( x, 0 ), getData( x ), getStride( x, 0 ), getOffset( x ) ); // eslint-disable-line max-len
-}
+declare function zsum( arrays: [ complex128ndarray ] ): Complex128;
 
 
 // EXPORTS //
 
-module.exports = zsum;
+export = zsum;
